@@ -1,0 +1,145 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --border-radius: 15px;
+  --box-shadow: 8px 8px 0px 0px var(--gray-950);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: var(--yellow);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+main {
+  max-width: 100%;
+  width: 380px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--gray-950);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 13px 13px 0px 0px var(--gray-950);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.tag {
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  font-weight: 800;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.publish-date {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: var(--gray-950);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: var(--gray-500);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-weight: 800;
+  color: var(--gray-950);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--gray-950);
+}
+
+.attribution a {
+  color: var(--gray-950);
+  font-weight: 800;
+}
+
+/* Responsive styles */
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+  }
+  
+  .card-content {
+    padding: 1.2rem;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 400px;
+  }
+}
