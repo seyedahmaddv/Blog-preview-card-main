@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/profile/seyedahmaddv/solutions](https://www.frontendmentor.io/profile/seyedahmaddv/solutions)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://blog-preview-card-main-chi-flame.vercel.app/](https://blog-preview-card-main-chi-flame.vercel.app/)
 
 ## My process
 
